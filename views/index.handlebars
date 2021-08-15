@@ -1,0 +1,56 @@
+    <section class="hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-6 col-xl-5">
+            <div class="hero-content">
+              <h4 class="sub-heading">Premium cosmetic products</h4>
+              <h1 class="main-heading">Kabinti Cosmetics</h1>
+              <p class="para-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, 
+                culpa harum voluptatibus quibusdam dolorem nisi distinctio 
+                velit earum ducimus ullam ipsam accusantium incidunt enim. 
+                Tempore quae impedit sint cumque dolore.</p>
+              <button class="primaryBtn">Shop now</button>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6 col-xl-7 text-center">
+              <img class="hero-img" src="/images/hero-bg.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="highlight">
+      <div class="overlay"></div>
+                <div class="highlight-card">
+                    <div class="row">
+                      <div class="col-6 col-md-6 col-lg-6 text-center">
+                          <h3 class="sub-heading2">Countries <br> worlwide</h3>
+                          <p class="stat">20+</p>
+                      </div>
+                      <div class="col-6 col-md-6 col-lg-6 text-center">
+                          <h3 class="sub-heading2">Product <br> range</h3>
+                          <p class="stat">50+</p>
+                      </div>
+                      <div class="col-6 col-md-6 col-lg-6 text-center">
+                          <h3 class="sub-heading2">Products <br> sold</h3>
+                          <p class="stat">23k+</p>
+                      </div>
+                      <div class="col-6 col-md-6 col-lg-6 text-center">
+                          <h3 class="sub-heading2">Valued <br> customers</h3>
+                          <p class="stat">200+</p>
+                      </div>
+                    </div>
+                </div>
+                </div>
+    </section>
+    <section class="section bg-light">
+      <div class="container">
+        <h1 class="main-heading text-center mb-5">Products</h1>
+          <div class="row">
+           {{#each products as |product|}}
+           {{> product-card product}}
+           {{/each}}
+          </div>
+      </div>
+    </section>
+</html>

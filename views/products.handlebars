@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="filter-cont">
+        <button class="btn-filter btn-skin ">Skin</button>
+        <button class="btn-filter btn-cosmetic btn-active">Cosmetics</button>
+        <button class="btn-filter btn-hair">Hair</button>
+    </div>
+</div>
+
+<section class="section">
+    <div class="container">
+        <div class="row">
+           {{#each products as |product|}}
+           {{> product-card product}}
+           {{/each}}
+        </div>
+    </div>
+</section>
